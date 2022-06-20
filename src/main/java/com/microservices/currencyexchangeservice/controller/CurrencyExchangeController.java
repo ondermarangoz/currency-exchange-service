@@ -23,7 +23,7 @@ public class CurrencyExchangeController {
     }
 
 
-    @GetMapping("currency-exchange/from/{from}/to/{to}")
+    @GetMapping("/currency-exchange/from/{from}/to/{to}")
     public CurrencyExchange retrieveExchange(@PathVariable String from, @PathVariable String to){
 
         String port = environment.getProperty("local.server.port");
